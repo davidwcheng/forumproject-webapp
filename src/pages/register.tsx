@@ -6,9 +6,9 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { Wrapper } from "../components/Wrapper";
-interface registerProps {}
+interface registerProps { }
 
-export const Register: React.FC<registerProps> = ({}) => {
+export const Register: React.FC<registerProps> = ({ }) => {
   return (
     <Wrapper>
       <Formik
@@ -20,8 +20,9 @@ export const Register: React.FC<registerProps> = ({}) => {
         {(values, handleChange) => (
           <Form>
             <FormControl>
-              <FormLabel htmlFor="username">username</FormLabel>
+              <FormLabel htmlFor="username" color="blue.700" fontSize="20px">Username</FormLabel>
               <Input
+                color="blue.700"
                 value={values.username}
                 onChange={handleChange}
                 id="username"
@@ -33,6 +34,7 @@ export const Register: React.FC<registerProps> = ({}) => {
         )}
       </Formik>
     </Wrapper>
+
   );
 };
 
