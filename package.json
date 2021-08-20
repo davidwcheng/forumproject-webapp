@@ -9,9 +9,8 @@
     "@chakra-ui/core": "^0.8.0",
     "@chakra-ui/icons": "^1.0.0",
     "@chakra-ui/react": "^1.4.2",
-    "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.0.0",
+    "@emotion/styled": "^11.3.0",
     "formik": "^2.2.9",
     "framer-motion": "^4.0.3",
     "next": "latest",
@@ -19,6 +18,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@emotion/core": "^11.0.0",
     "typescript": "^4.3.5"
   }
 }
