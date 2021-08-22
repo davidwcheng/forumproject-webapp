@@ -11,12 +11,10 @@ const MyBox = styled(Box)({
 export const Wrapper: React.FC<WrapperProps> = ({ children }) => {
   return (
     <MyBox 
-      maxHeight="800px"
       maxWidth="800px"
-      marginLeft="25%"
-      marginTop="20%"
-      p={5}
-      borderRadius={16}
+      marginX="auto"
+      marginTop={8}
+      borderRadius={8}
     >
       {children}
     </MyBox>
