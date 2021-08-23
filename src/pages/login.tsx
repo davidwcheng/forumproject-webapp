@@ -26,7 +26,7 @@ export const Login: React.FC<{}> = ({}) => {
           }
         }}
       >
-        {() => (
+        {({ isSubmitting }) => (
           <Form>
             <InputField
               name="username"
@@ -42,11 +42,14 @@ export const Login: React.FC<{}> = ({}) => {
               ></InputField>
             </Box>
             <Button
-                colorScheme="purple"
-                variant="outline"
-                marginTop={4}
+              type="submit"
+              isLoading={isSubmitting}
+              loadingText="Logging in"
+              colorScheme="purple"
+              variant="outline"
+              marginTop={4}
             >
-              LOGIN
+              Login
             </Button>
           </Form>
         )}
