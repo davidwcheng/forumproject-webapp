@@ -47,7 +47,6 @@ export const Register: React.FC<registerProps> = ({}) => {
               isLoading={isSubmitting}
               loadingText="Register"
               colorScheme="purple"
-              variant="outline"
               marginTop={4}
             >
               Register

@@ -46,7 +46,6 @@ export const Login: React.FC<{}> = ({}) => {
               isLoading={isSubmitting}
               loadingText="Logging in"
               colorScheme="purple"
-              variant="outline"
               marginTop={4}
             >
               Login
