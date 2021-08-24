@@ -4,7 +4,6 @@ import React, { InputHTMLAttributes } from 'react'
 
 type InputFieldProps = InputHTMLAttributes<HTMLInputElement> & {
     label: string;
-    //placeholder: string;
     name: string;
 };
 
