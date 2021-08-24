@@ -4,7 +4,13 @@ import React from "react";
 import { createClient, dedupExchange, fetchExchange, Provider } from "urql";
 import { cacheExchange, Cache, QueryInput } from "@urql/exchange-graphcache";
 import theme from "../theme";
-import { LoginMutation, MeDocument, MeQuery, RegisterMutation } from "../generated/graphql";
+import {
+  LoginMutation,
+  LogoutMutation,
+  MeDocument,
+  MeQuery,
+  RegisterMutation,
+} from "../generated/graphql";
 
 function newUpdateQuery<Result, Query>(
   cache: Cache,
@@ -59,6 +65,15 @@ const client = createClient({
                   };
                 }
               }
+            );
+          },
+
+          logout: (__result: LogoutMutation, args, cache, info) => {
+            newUpdateQuery<LogoutMutation, MeQuery>(
+              cache,
+              { query: MeDocument },
+              __result,
+              () => ({ me: null })
             );
           },
         },
