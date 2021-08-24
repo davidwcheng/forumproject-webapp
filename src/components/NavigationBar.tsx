@@ -30,7 +30,7 @@ export const NavigationBar: React.FC<NavigationBarProps> = ({}) => {
   } else {
     body = (
       <Box display="flex">
-        <Box mr={2}>{data.me.username}</Box>
+        <Box mr={4}>{data.me.username}</Box>
         <Button variant="link">Logout</Button>
       </Box>
     );
@@ -40,7 +40,7 @@ export const NavigationBar: React.FC<NavigationBarProps> = ({}) => {
     <Box
       display="flex"
       flexDirection="row-reverse"
-      bgcolor="teal"
+      bgcolor="slategrey"
       p={4}
       ml={"auto"}
     >
